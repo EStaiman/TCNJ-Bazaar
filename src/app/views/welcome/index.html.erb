@@ -1,1 +1,7 @@
-<h2 style="text-align:center">Welcome to the Textbooks Bazaar </h2>
+<% if current_user %>
+<h2 style="text-align:center">Welcome to the Textbook Bazaar <%= current_user.name %> </h2>
+<br> <%=link_to "Logout", logout_path%>
+<%else %>
+<h2 style="text-align:center">Welcome to the Textbook Bazaar </h2>
+<br> <%= link_to "Login", login_path %>
+<% end%>
