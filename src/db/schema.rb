@@ -10,23 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_24_223412) do
+ActiveRecord::Schema.define(version: 2019_11_25_063041) do
 
-  create_table "textbooks", force: :cascade do |t|
-    t.string "name"
-    t.string "condition"
-    t.string "edition"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "author"
-    t.string "user"
-  end
+# Could not dump table "textbooks" because of following StandardError
+#   Unknown type 'message' for column 'offer'
 
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "admin"
+    t.string "message"
   end
 
 end

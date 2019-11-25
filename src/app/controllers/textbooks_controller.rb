@@ -4,9 +4,7 @@ class TextbooksController < ApplicationController
   # GET /textbooks
   # GET /textbooks.json
   def index
-    @textbooks = Textbook.all
-
- 
+    @textbooks = Textbook.search(params[:search])
   end
 
   # GET /textbooks/1
@@ -27,7 +25,7 @@ class TextbooksController < ApplicationController
   # POST /textbooks.json
   def create
     t = textbook_params
-    t[:user] = current_user 
+    t[:user] = current_user.name.to_s 
     @textbook = Textbook.new(t)
     respond_to do |format|
       if @textbook.save
@@ -64,6 +62,14 @@ class TextbooksController < ApplicationController
     end
   end
 
+  def offer
+   @textbook = Textbook.find(params[:id])
+   puts params[:name]
+   puts "HERE"
+   make_offer(params[:offer], params[:id])
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_textbook
@@ -72,6 +78,6 @@ class TextbooksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def textbook_params
-      params.require(:textbook).permit(:name, :condition, :edition, :user)
+      params.require(:textbook).permit(:name, :condition, :edition, :user, :search, :price, :offer, :id)
     end
 end

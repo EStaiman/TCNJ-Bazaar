@@ -1,7 +1,12 @@
-<p id="notice"><%= notice %></p>
 <div style="text-align: center">
 <h1>Textbooks</h1>
 
+
+<h4> Search by Textbook Name</h4>
+<%= form_tag(textbooks_path, method: :get) do %>
+  <%= text_field_tag(:search, params[:search]) %>
+  <%= submit_tag ("Search") %>
+<% end %>
 <table style = "margin-left: auto; margin-right: auto">
   <thead>
     <tr>
@@ -9,6 +14,7 @@
       <th>Author</th>
       <th>Edition</th>
       <th>Condition</th>
+      <th>Price</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,18 +22,19 @@
   <tbody>
     <% @textbooks.each do |textbook| %>
       <tr>
-        <td><%= textbook.name %></td>
+        <td><%= link_to textbook.name, textbook %></td>
 	<td><%= textbook.author %></td>
         <td><%= textbook.edition %></td>
         <td><%= textbook.condition %></td>
-        <td><%= link_to 'Show', textbook %></td>
-        <td><%= link_to 'Edit', edit_textbook_path(textbook) %></td>
-        <td><%= link_to 'Destroy', textbook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= textbook.price %></td>
+        <% if current_user && (current_user.name == textbook.user || current_user.id == 4) %>
+          <td><%= link_to 'Edit', edit_textbook_path(textbook) %></td>
+          <td><%= link_to 'Destroy', textbook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% end %>
       </tr>
+
+    
     <% end %>
   </tbody>
 </table>
-
-<br>
 </div>
-<# %= link_to 'New Textbook', new_textbook_path %>
