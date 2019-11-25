@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :textbooks
   resources :sessions, only: [:new, :create, :destroy]
   
+  get 'about', to: "welcome#faq", as: "about_path"
   get 'profile', to: "users#profile", as: "profile_path"
   get 'textbooks/:id/offer', to: "textbooks#offer", as: "offer_path"
   get 'login', to: "sessions#new", as: "login"

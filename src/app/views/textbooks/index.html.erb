@@ -19,6 +19,7 @@
     </tr>
   </thead>
 
+  <% if @textbooks %>
   <tbody>
     <% @textbooks.each do |textbook| %>
       <tr>
@@ -33,7 +34,7 @@
 	<% end %>
       </tr>
 
-    
+    <% end %>
     <% end %>
   </tbody>
 </table>

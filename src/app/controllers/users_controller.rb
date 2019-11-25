@@ -21,6 +21,10 @@ class UsersController < ApplicationController
   def edit
   end
 
+
+  def profile
+    @textbooks = Textbook.all
+  end
   # POST /users
   # POST /users.json
   def create
@@ -69,6 +73,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name)
+      params.require(:user).permit(:name, :message)
     end
 end

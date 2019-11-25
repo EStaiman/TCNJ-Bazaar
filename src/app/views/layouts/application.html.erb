@@ -34,12 +34,12 @@
   </head>
 
   <body style = "background-image: linear-gradient(to left, DarkBlue, LightGray)">
-  <h1 style = "text-align:center; background-color: gray"> Textbook Bazaar </h1>
+  <h1 style = "text-align:center"> Textbook Bazaar </h1>
   <ul>
     <li><%= link_to "Home", welcome_path_url%>> </li>
     <li><%= link_to "Browse Textbooks", browse_path_url%>></li>
-    <li><%= link_to ">Sell a Textbook", sell_path_url%></li>
-    <li><a href="https://github.com/EStaiman/TCNJ-Bazaar/wiki">About</a></li>
+    <li><%= link_to "Sell a Textbook", sell_path_url%></li>
+    <li><%= link_to "About", about_path_url %> </li>
     <li><%= link_to "Contact", contact_path_url%></li>
     <% if current_user%>
     <li><%= link_to "Profile", profile_path_url %> </li>

@@ -12169,3 +12169,1185 @@ Processing by UsersController#profile as HTML
 Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:34:01 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered users/profile.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 205ms (Views: 196.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 03:34:19 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 03:34:21 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:34:34 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered users/profile.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:36:46 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered users/profile.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @textbooks.each do |textbook| %>
+    30:       <tr>
+    31:         <td><%= link_to textbook.name, textbook %></td>
+    32: 	<td><%= textbook.author %></td>
+  
+app/views/users/profile.html.erb:29:in `_app_views_users_profile_html_erb___1561031276929459415_69941231587820'
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:38:28 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::Textboow):
+  
+app/controllers/users_controller.rb:26:in `profile'
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:38:46 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 212ms (Views: 201.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:40:09 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 212ms (Views: 200.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:40:40 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 215ms (Views: 204.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/logout" for 159.91.64.3 at 2019-11-25 03:40:42 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.91.64.3 at 2019-11-25 03:40:42 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 159.91.64.3 at 2019-11-25 03:40:44 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 159.91.64.3 at 2019-11-25 03:40:50 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4MpBuTeg11pE+i9O/wMShDBT68IVQUdwODCw+iVwNiVSX05eT8MQstYxeeskRRxFbodUQCQsu9LuLynxksAuog==", "name"=>"User 2", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "User 2"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 159.91.64.3 at 2019-11-25 03:40:50 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:40:51 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:45:40 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 209ms (Views: 198.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/6/edit" for 159.91.64.3 at 2019-11-25 03:45:44 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/edit.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/6" for 159.91.64.3 at 2019-11-25 03:45:48 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tAQ90INWVPCthDozk2PtMEIVFdGgj744QMtUskfogJOZLHNotAqdxaBkfpncaLWWyO2H8NfBFpC+c6/5/1QU7Q==", "user"=>{"name"=>"User 2", "message"=>"Hello"}, "commit"=>"Update User", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+Unpermitted parameter: :message
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/users/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 159.91.64.3 at 2019-11-25 03:45:48 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 159.91.64.3 at 2019-11-25 03:46:51 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 204ms (Views: 181.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/6/edit" for 159.91.64.3 at 2019-11-25 03:46:54 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.9ms)
+  Rendered users/edit.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/6" for 159.91.64.3 at 2019-11-25 03:46:56 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ixZjAcWAQZeviQ+AoHa7BwhacHKZDnhtpLCbSQSFJhimPi258tyIoqJpSyrvfeOhgqLiU+5A0MVaCGACvDmyZg==", "user"=>{"name"=>"User 2", "message"=>"F"}, "commit"=>"Update User", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+Unpermitted parameter: :message
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/users/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 159.91.64.3 at 2019-11-25 03:46:56 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 159.91.64.3 at 2019-11-25 03:46:58 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 159.91.64.3 at 2019-11-25 03:49:13 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 213ms (Views: 190.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/6/edit" for 159.91.64.3 at 2019-11-25 03:49:15 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/edit.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/6" for 159.91.64.3 at 2019-11-25 03:49:17 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T7Mtnz5jTR9uMvngQbKptAgAil4ixYXO9Uj9uNX8XtVim2MnCT+EKmPSvUoOufESgvgYf1WLLWYL8AbzbUDKqw==", "user"=>{"name"=>"User 2", "message"=>"1"}, "commit"=>"Update User", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "message" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["message", "1"], ["updated_at", "2019-11-25 08:49:17.368201"], ["id", 6]]
+  ↳ app/controllers/users_controller.rb:48
+  [1m[35m (29.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/users/6
+Completed 302 Found in 33ms (ActiveRecord: 30.1ms)
+
+
+Started GET "/users/6" for 159.91.64.3 at 2019-11-25 03:49:17 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6/edit" for 159.91.64.3 at 2019-11-25 03:49:19 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.7ms)
+  Rendered users/edit.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/6" for 159.91.64.3 at 2019-11-25 03:49:22 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SyHxV6ufV+rnc2Arod19XNZ3BbIg5O0vH4FwU+fYtZBmCb/vnMOe3+qTJIHu1iX6XI+Xk1eqRYfhOYsYX2Qh7g==", "user"=>{"name"=>"User 2", "message"=>""}, "commit"=>"Update User", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "message" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["message", ""], ["updated_at", "2019-11-25 08:49:22.195031"], ["id", 6]]
+  ↳ app/controllers/users_controller.rb:48
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/users/6
+Completed 302 Found in 11ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/users/6" for 159.91.64.3 at 2019-11-25 03:49:22 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 159.91.64.3 at 2019-11-25 03:49:29 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.91.64.3 at 2019-11-25 03:49:29 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 159.91.64.3 at 2019-11-25 03:49:31 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 159.91.64.3 at 2019-11-25 03:49:33 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FKLIxCXAg1J3G0SFWmnCFaR/zu0dUP560N2YOxtyz0SmN8cjXaNEuuXQEiCBL8zU+qtxbyw9AtgGwgEwrMLXww==", "name"=>"User 1", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "User 1"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 159.91.64.3 at 2019-11-25 03:49:33 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:49:36 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 43ms (Views: 37.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/5/edit" for 159.91.64.3 at 2019-11-25 03:49:37 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.8ms)
+  Rendered users/edit.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/5" for 159.91.64.3 at 2019-11-25 03:49:50 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YbzpmHEoD1kW8uXXn8yKW+SM+vE2naGuTFsDAGF1jvIqr949RbVDe5/IXphrDV3I/iUCeeTv/KXD+GwFo2vx7w==", "user"=>{"name"=>"User 1", "message"=>""}, "commit"=>"Update User", "id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "message" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["message", ""], ["updated_at", "2019-11-25 08:49:50.030111"], ["id", 5]]
+  ↳ app/controllers/users_controller.rb:48
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:48
+Redirected to http://csc415-server21.hpc.tcnj.edu:3000/users/5
+Completed 302 Found in 10ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/users/5" for 159.91.64.3 at 2019-11-25 03:49:50 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 03:49:54 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 03:50:06 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 03:50:07 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 03:51:04 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 209ms (Views: 198.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 03:51:07 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 159.91.64.3 at 2019-11-25 03:51:09 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#new as HTML
+  Rendering textbooks/new.html.erb within layouts/application
+  Rendered textbooks/_form.html.erb (5.1ms)
+  Rendered textbooks/new.html.erb within layouts/application (5.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sell" for 159.91.64.3 at 2019-11-25 03:53:57 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TextbooksController#new as HTML
+  Rendering textbooks/new.html.erb within layouts/application
+  Rendered textbooks/_form.html.erb (4.9ms)
+  Rendered textbooks/new.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 228ms (Views: 201.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 03:54:05 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 04:00:42 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 204ms (Views: 187.0ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 04:00:43 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.3ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sell" for 159.91.64.3 at 2019-11-25 04:00:46 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#new as HTML
+  Rendering textbooks/new.html.erb within layouts/application
+  Rendered textbooks/_form.html.erb (5.3ms)
+  Rendered textbooks/new.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 04:00:52 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 159.91.64.3 at 2019-11-25 04:00:53 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 04:01:04 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 04:01:20 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 04:03:36 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 04:03:37 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Math+Book&commit=Search" for 159.91.64.3 at 2019-11-25 04:03:42 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Math Book", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Math Book"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=d&commit=Search" for 159.91.64.3 at 2019-11-25 04:03:46 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"d", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "d"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Science&commit=Search" for 159.91.64.3 at 2019-11-25 04:03:52 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Science", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Science"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Math&commit=Search" for 159.91.64.3 at 2019-11-25 04:03:57 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Math", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Math"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Mat&commit=Search" for 159.91.64.3 at 2019-11-25 04:09:21 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Mat", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Mat"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Mat&commit=Search" for 159.91.64.3 at 2019-11-25 04:09:31 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Mat", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Mat"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:23
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Mat&commit=Search" for 159.91.64.3 at 2019-11-25 04:10:17 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Mat", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Mat"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  Rendered textbooks/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @textbooks.each do |textbook| %>
+    24:       <tr>
+    25:         <td><%= link_to textbook.name, textbook %></td>
+    26: 	<td><%= textbook.author %></td>
+  
+app/views/textbooks/index.html.erb:23:in `_app_views_textbooks_index_html_erb__1104197137909714243_70246308622280'
+Started GET "/textbooks?utf8=%E2%9C%93&search=Mat&commit=Search" for 159.91.64.3 at 2019-11-25 04:12:34 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Mat", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Mat"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  Rendered textbooks/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 213ms (Views: 200.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=&commit=Search" for 159.91.64.3 at 2019-11-25 04:12:39 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  Rendered textbooks/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=&commit=Search" for 159.91.64.3 at 2019-11-25 04:12:41 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  Rendered textbooks/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Math+Book&commit=Search" for 159.91.64.3 at 2019-11-25 04:12:50 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Math Book", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Math Book"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:6
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 36ms (Views: 25.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Math+Book&commit=Search" for 159.91.64.3 at 2019-11-25 04:16:46 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Math Book", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Math Book"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:9
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 225ms (Views: 193.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=Math+Book&commit=Search" for 159.91.64.3 at 2019-11-25 04:16:48 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Math Book", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "Math Book"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:9
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=&commit=Search" for 159.91.64.3 at 2019-11-25 04:16:51 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:9
+  Rendering textbooks/index.html.erb within layouts/application
+  Rendered textbooks/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=f&commit=Search" for 159.91.64.3 at 2019-11-25 04:16:59 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"f", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", "f"], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:9
+  Rendering textbooks/index.html.erb within layouts/application
+  Rendered textbooks/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/textbooks?utf8=%E2%9C%93&search=&commit=Search" for 159.91.64.3 at 2019-11-25 04:17:03 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT  "textbooks".* FROM "textbooks" WHERE "textbooks"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/models/textbook.rb:9
+  Rendering textbooks/index.html.erb within layouts/application
+  Rendered textbooks/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 159.91.64.3 at 2019-11-25 04:18:09 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 214ms (Views: 205.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 04:18:11 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 37ms (Views: 32.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 04:18:39 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 04:18:42 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.2ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sell" for 159.91.64.3 at 2019-11-25 04:18:43 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#new as HTML
+  Rendering textbooks/new.html.erb within layouts/application
+  Rendered textbooks/_form.html.erb (11.1ms)
+  Rendered textbooks/new.html.erb within layouts/application (12.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 159.91.64.3 at 2019-11-25 04:18:44 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 04:18:46 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 04:20:28 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 04:20:29 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 159.91.64.3 at 2019-11-25 04:20:30 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#new as HTML
+  Rendering textbooks/new.html.erb within layouts/application
+  Rendered textbooks/_form.html.erb (2.1ms)
+  Rendered textbooks/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sell" for 159.91.64.3 at 2019-11-25 04:57:29 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TextbooksController#new as HTML
+  Rendering textbooks/new.html.erb within layouts/application
+  Rendered textbooks/_form.html.erb (4.8ms)
+  Rendered textbooks/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 419ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path_url' for #<#<Class:0x000055aff5633da0>:0x000055aff569a438>):
+    39:     <li><%= link_to "Home", welcome_path_url%>> </li>
+    40:     <li><%= link_to "Browse Textbooks", browse_path_url%>></li>
+    41:     <li><%= link_to "Sell a Textbook", sell_path_url%></li>
+    42:     <li><%= link_to "About", about_path_url %> </li>
+    43:     <li><%= link_to "Contact", contact_path_url%></li>
+    44:     <% if current_user%>
+    45:     <li><%= link_to "Profile", profile_path_url %> </li>
+  
+app/views/layouts/application.html.erb:42:in `_app_views_layouts_application_html_erb___4493943445500514007_47107112956780'
+Started GET "/" for 159.91.64.3 at 2019-11-25 05:00:41 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (19.5ms)
+Completed 500 Internal Server Error in 453ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path_url' for #<#<Class:0x00007f12d086ba48>:0x00007f12d08694c8>):
+    39:     <li><%= link_to "Home", welcome_path_url%>> </li>
+    40:     <li><%= link_to "Browse Textbooks", browse_path_url%>></li>
+    41:     <li><%= link_to "Sell a Textbook", sell_path_url%></li>
+    42:     <li><%= link_to "About", about_path_url %> </li>
+    43:     <li><%= link_to "Contact", contact_path_url%></li>
+    44:     <% if current_user%>
+    45:     <li><%= link_to "Profile", profile_path_url %> </li>
+  
+app/views/layouts/application.html.erb:42:in `_app_views_layouts_application_html_erb___3042803664444385845_69859392387920'
+Started GET "/" for 159.91.64.3 at 2019-11-25 05:01:34 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 216ms (Views: 207.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/about" for 159.91.64.3 at 2019-11-25 05:01:37 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#faq as HTML
+  Rendering welcome/faq.html.erb within layouts/application
+  Rendered welcome/faq.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 159.91.64.3 at 2019-11-25 05:05:38 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /local/home/sysadmin/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#faq as HTML
+  Rendering welcome/faq.html.erb within layouts/application
+  Rendered welcome/faq.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 203ms (Views: 195.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 05:05:55 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/browse" for 159.91.64.3 at 2019-11-25 05:05:58 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TextbooksController#index as HTML
+  Rendering textbooks/index.html.erb within layouts/application
+  [1m[36mTextbook Load (0.3ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/textbooks/index.html.erb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered textbooks/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 159.91.64.3 at 2019-11-25 05:06:14 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#faq as HTML
+  Rendering welcome/faq.html.erb within layouts/application
+  Rendered welcome/faq.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contact" for 159.91.64.3 at 2019-11-25 05:06:15 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profile" for 159.91.64.3 at 2019-11-25 05:06:16 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mTextbook Load (0.1ms)[0m  [1m[34mSELECT "textbooks".* FROM "textbooks"[0m
+  ↳ app/views/users/profile.html.erb:29
+  Rendered users/profile.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome" for 159.91.64.3 at 2019-11-25 05:06:20 -0500
+Cannot render console from 159.91.64.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+

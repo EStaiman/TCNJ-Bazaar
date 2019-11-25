@@ -9,7 +9,7 @@ class Textbook < ApplicationRecord
 	t[0] = textbook
 	t
       else
-        Textbook.all
+        nil
       end
     else
       Textbook.all
